@@ -46,7 +46,7 @@ export default function Quiz() {
 
             intervalId.current = setInterval(() => {
                 setTimer(prev => {
-                    if (prev === 30) setIsAnswerClickable(true);
+                    if (prev === 20) setIsAnswerClickable(true);
                     if (prev === 1) {
                         clearInterval(intervalId.current);
                         handleNextQuestion();
